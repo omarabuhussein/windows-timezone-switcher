@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>Timezone Switcher</title>
+    <link href="assets/plugins/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link class="main-stylesheet" href="assets/css/main.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="fixed-header">
+
+<div class="page-container">
+    <div class="header">
+        <div class="pull-left sm-table">
+            <div class="header-inner">
+                <div class="brand inline">
+                    <img src="assets/img/logo.png" alt="logo" width="193" height="18">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content-wrapper">
+        <div class="content">
+            <div class="container-fluid">
+                <br>
+                <div class="alert alert-info">Your current Time Zone is : <b id="current-timezone"></b></div>
+                <p>
+                    Add timezones to the tray icon timezones list for easy timezone switch then click Save :
+                </p>
+                <div class="form-group">
+                    <select id="timezones-list" class="full-width" multiple>
+                        <option value="UTC-11">UTC-11</option>
+                        <option value="Aleutian Standard Time">Aleutian Standard Time</option>
+                        <option value="Hawaiian Standard Time">Hawaiian Standard Time</option>
+                        <option value="Marquesas Standard Time">Marquesas Standard Time</option>
+                        <option value="Alaskan Standard Time">Alaskan Standard Time</option>
+                        <option value="UTC-09">UTC-09</option>
+                        <option value="Pacific Standard Time (Mexico)">Pacific Standard Time (Mexico)</option>
+                        <option value="UTC-08">UTC-08</option>
+                        <option value="Pacific Standard Time">Pacific Standard Time</option>
+                        <option value="US Mountain Standard Time">US Mountain Standard Time</option>
+                        <option value="Mountain Standard Time (Mexico)">Mountain Standard Time (Mexico)</option>
+                        <option value="Mountain Standard Time">Mountain Standard Time</option>
+                        <option value="Central America Standard Time">Central America Standard Time</option>
+                        <option value="Central Standard Time">Central Standard Time</option>
+                        <option value="Easter Island Standard Time">Easter Island Standard Time</option>
+                        <option value="Central Standard Time (Mexico)">Central Standard Time (Mexico)</option>
+                        <option value="Canada Central Standard Time">Canada Central Standard Time</option>
+                        <option value="SA Pacific Standard Time">SA Pacific Standard Time</option>
+                        <option value="Eastern Standard Time (Mexico)">Eastern Standard Time (Mexico)</option>
+                        <option value="Eastern Standard Time">Eastern Standard Time</option>
+                        <option value="Haiti Standard Time">Haiti Standard Time</option>
+                        <option value="Cuba Standard Time">Cuba Standard Time</option>
+                        <option value="US Eastern Standard Time">US Eastern Standard Time</option>
+                        <option value="Paraguay Standard Time">Paraguay Standard Time</option>
+                        <option value="Atlantic Standard Time">Atlantic Standard Time</option>
+                        <option value="Venezuela Standard Time">Venezuela Standard Time</option>
+                        <option value="Central Brazilian Standard Time">Central Brazilian Standard Time</option>
+                        <option value="SA Western Standard Time">SA Western Standard Time</option>
+                        <option value="Pacific SA Standard Time">Pacific SA Standard Time</option>
+                        <option value="Turks And Caicos Standard Time">Turks And Caicos Standard Time</option>
+                        <option value="Newfoundland Standard Time">Newfoundland Standard Time</option>
+                        <option value="Tocantins Standard Time">Tocantins Standard Time</option>
+                        <option value="E. South America Standard Time">E. South America Standard Time</option>
+                        <option value="SA Eastern Standard Time">SA Eastern Standard Time</option>
+                        <option value="Argentina Standard Time">Argentina Standard Time</option>
+                        <option value="Greenland Standard Time">Greenland Standard Time</option>
+                        <option value="Montevideo Standard Time">Montevideo Standard Time</option>
+                        <option value="Saint Pierre Standard Time">Saint Pierre Standard Time</option>
+                        <option value="Bahia Standard Time">Bahia Standard Time</option>
+                        <option value="UTC-02">UTC-02</option>
+                        <option value="Azores Standard Time">Azores Standard Time</option>
+                        <option value="Cape Verde Standard Time">Cape Verde Standard Time</option>
+                        <option value="UTC">UTC</option>
+                        <option value="Morocco Standard Time">Morocco Standard Time</option>
+                        <option value="GMT Standard Time">GMT Standard Time</option>
+                        <option value="Greenwich Standard Time">Greenwich Standard Time</option>
+                        <option value="W. Europe Standard Time">W. Europe Standard Time</option>
+                        <option value="Central Europe Standard Time">Central Europe Standard Time</option>
+                        <option value="Romance Standard Time">Romance Standard Time</option>
+                        <option value="Central European Standard Time">Central European Standard Time</option>
+                        <option value="W. Central Africa Standard Time">W. Central Africa Standard Time</option>
+                        <option value="Namibia Standard Time">Namibia Standard Time</option>
+                        <option value="Jordan Standard Time">Jordan Standard Time</option>
+                        <option value="GTB Standard Time">GTB Standard Time</option>
+                        <option value="Middle East Standard Time">Middle East Standard Time</option>
+                        <option value="Egypt Standard Time">Egypt Standard Time</option>
+                        <option value="E. Europe Standard Time">E. Europe Standard Time</option>
+                        <option value="Syria Standard Time">Syria Standard Time</option>
+                        <option value="West Bank Standard Time">West Bank Standard Time</option>
+                        <option value="South Africa Standard Time">South Africa Standard Time</option>
+                        <option value="FLE Standard Time">FLE Standard Time</option>
+                        <option value="Kaliningrad Standard Time">Kaliningrad Standard Time</option>
+                        <option value="Libya Standard Time">Libya Standard Time</option>
+                        <option value="Arabic Standard Time">Arabic Standard Time</option>
+                        <option value="Turkey Standard Time">Turkey Standard Time</option>
+                        <option value="Arab Standard Time">Arab Standard Time</option>
+                        <option value="Belarus Standard Time">Belarus Standard Time</option>
+                        <option value="Russian Standard Time">Russian Standard Time</option>
+                        <option value="E. Africa Standard Time">E. Africa Standard Time</option>
+                        <option value="Iran Standard Time">Iran Standard Time</option>
+                        <option value="Arabian Standard Time">Arabian Standard Time</option>
+                        <option value="Astrakhan Standard Time">Astrakhan Standard Time</option>
+                        <option value="Azerbaijan Standard Time">Azerbaijan Standard Time</option>
+                        <option value="Russia Time Zone 3">Russia Time Zone 3</option>
+                        <option value="Mauritius Standard Time">Mauritius Standard Time</option>
+                        <option value="Saratov Standard Time">Saratov Standard Time</option>
+                        <option value="Georgian Standard Time">Georgian Standard Time</option>
+                        <option value="Caucasus Standard Time">Caucasus Standard Time</option>
+                        <option value="Afghanistan Standard Time">Afghanistan Standard Time</option>
+                        <option value="West Asia Standard Time">West Asia Standard Time</option>
+                        <option value="Ekaterinburg Standard Time">Ekaterinburg Standard Time</option>
+                        <option value="Pakistan Standard Time">Pakistan Standard Time</option>
+                        <option value="India Standard Time">India Standard Time</option>
+                        <option value="Sri Lanka Standard Time">Sri Lanka Standard Time</option>
+                        <option value="Nepal Standard Time">Nepal Standard Time</option>
+                        <option value="Central Asia Standard Time">Central Asia Standard Time</option>
+                        <option value="Bangladesh Standard Time">Bangladesh Standard Time</option>
+                        <option value="Omsk Standard Time">Omsk Standard Time</option>
+                        <option value="Myanmar Standard Time">Myanmar Standard Time</option>
+                        <option value="SE Asia Standard Time">SE Asia Standard Time</option>
+                        <option value="Altai Standard Time">Altai Standard Time</option>
+                        <option value="W. Mongolia Standard Time">W. Mongolia Standard Time</option>
+                        <option value="North Asia Standard Time">North Asia Standard Time</option>
+                        <option value="N. Central Asia Standard Time">N. Central Asia Standard Time</option>
+                        <option value="Tomsk Standard Time">Tomsk Standard Time</option>
+                        <option value="China Standard Time">China Standard Time</option>
+                        <option value="North Asia East Standard Time">North Asia East Standard Time</option>
+                        <option value="Singapore Standard Time">Singapore Standard Time</option>
+                        <option value="W. Australia Standard Time">W. Australia Standard Time</option>
+                        <option value="Taipei Standard Time">Taipei Standard Time</option>
+                        <option value="Ulaanbaatar Standard Time">Ulaanbaatar Standard Time</option>
+                        <option value="North Korea Standard Time">North Korea Standard Time</option>
+                        <option value="Aus Central W. Standard Time">Aus Central W. Standard Time</option>
+                        <option value="Transbaikal Standard Time">Transbaikal Standard Time</option>
+                        <option value="Tokyo Standard Time">Tokyo Standard Time</option>
+                        <option value="Korea Standard Time">Korea Standard Time</option>
+                        <option value="Yakutsk Standard Time">Yakutsk Standard Time</option>
+                        <option value="Cen. Australia Standard Time">Cen. Australia Standard Time</option>
+                        <option value="AUS Central Standard Time">AUS Central Standard Time</option>
+                        <option value="E. Australia Standard Time">E. Australia Standard Time</option>
+                        <option value="AUS Eastern Standard Time">AUS Eastern Standard Time</option>
+                        <option value="West Pacific Standard Time">West Pacific Standard Time</option>
+                        <option value="Tasmania Standard Time">Tasmania Standard Time</option>
+                        <option value="Vladivostok Standard Time">Vladivostok Standard Time</option>
+                        <option value="Lord Howe Standard Time">Lord Howe Standard Time</option>
+                        <option value="Bougainville Standard Time">Bougainville Standard Time</option>
+                        <option value="Russia Time Zone 10">Russia Time Zone 10</option>
+                        <option value="Magadan Standard Time">Magadan Standard Time</option>
+                        <option value="Norfolk Standard Time">Norfolk Standard Time</option>
+                        <option value="Sakhalin Standard Time">Sakhalin Standard Time</option>
+                        <option value="Central Pacific Standard Time">Central Pacific Standard Time</option>
+                        <option value="Russia Time Zone 11">Russia Time Zone 11</option>
+                        <option value="New Zealand Standard Time">New Zealand Standard Time</option>
+                        <option value="UTC+12">UTC+12</option>
+                        <option value="Fiji Standard Time">Fiji Standard Time</option>
+                        <option value="Chatham Islands Standard Time">Chatham Islands Standard Time</option>
+                        <option value="UTC+13">UTC+13</option>
+                        <option value="Tonga Standard Time">Tonga Standard Time</option>
+                        <option value="Samoa Standard Time">Samoa Standard Time</option>
+                        <option value="Line Islands Standard Time">Line Islands Standard Time</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <button id="save-timezones" class="btn btn-info btn-sm pull-right">Save</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid container-fixed-lg footer">
+            <div class="copyright sm-text-center">
+                <p class="small no-margin pull-left sm-pull-reset">
+                    <span class="font-montserrat">Built by : <a href="https://github.com/omarabuhussein">Omar Abu Husssein</a></span>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script>
+    window.$ = window.jQuery = require('./assets/plugins/jquery/jquery-1.11.1.min.js');
+</script>
+<script type="text/javascript" src="assets/plugins/bootstrap-select2/select2.min.js"></script>
+<script>require('./renderer.js')</script>
+</html>
