@@ -1,25 +1,30 @@
 {
-  "name": "electron-quick-start",
+  "name": "timezoneswitcher",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Windows OS easy timezone switcher",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "repository": "https://github.com/omarabuhussein/windows-timezone-switcher",
+  "author": "Omar abu hussein  <opetmar91@gmail.com>",
+  "license": "GNU GPLv3",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.1",
+    "electron-builder": "^15.6.2"
+    
   },
-  "dependencies": {
-    "electron-json-storage": "^3.0.1"
+  "dependencies":  {
+	 "electron-json-storage": "^3.0.1"
+  },
+  "build": {
+    "appId": "omarabuhussein.timezoneswitcher",
+    "mac": {
+      "category": "utilities"
+    }
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build"
   }
 }

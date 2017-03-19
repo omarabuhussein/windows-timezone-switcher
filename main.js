@@ -22,7 +22,7 @@ function createMainWindow() {
         height: 600,
         minWidth: 800,
         minHeight: 600,
-        icon: 'assets/img/app_icon.ico'
+        icon: __dirname + '/assets/img/app_icon.ico'
     });
 
     // Hides the main window menu
@@ -56,7 +56,7 @@ function createMainWindow() {
  */
 function createTrayIcon() {
     // Creates the tray icon and ensures that clicking on it will show the app main window
-    tray = new Tray('assets/img/tray_icon.ico').on('click', () => {
+    tray = new Tray( __dirname + '/assets/img/tray_icon.ico' ).on('click', () => {
         mainWindow.isVisible() ? mainWindow.hide() : mainWindow.show()
     });
 
