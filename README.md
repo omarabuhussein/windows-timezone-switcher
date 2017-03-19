@@ -16,7 +16,7 @@ This app is only tested on windows 10 home edition.
 
 ## Download links
 
-You will always find the latest version at this URL :
+You will always find the latest release at this URL : https://github.com/omarabuhussein/windows-timezone-switcher/releases
 
 
 ## Demonstration
