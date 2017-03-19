@@ -28,7 +28,7 @@ You will always find the latest version at this URL :
 - This app is created using [Electron platform](https://electron.atom.io/).
 - It use [Electron json storage](https://github.com/jviotti/electron-json-storage) to store user data.
 - It use [Electron builder](https://github.com/electron-userland/electron-builder) to generate windows installers
-
+- It use [Tzutil](https://technet.microsoft.com/en-us/library/hh875624(v=ws.11).aspx) command line tool to control timezones
 
 ### For local development
 
